@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD- LOGIN E CADASTRO</title>
+</head>
+
+
+
+
+<body style="background-color: rgb(228, 243, 188);">
+  
+
+<div id="divCadastro">
+
+    <center>
+<br><br><br><br><br><br>
+            
+        <label style="font-size: xx-large; color: rgb(83, 48, 20);">CADASTRO</label>
+        
+        
+        
+        <br>
+        <input style="border: 1px; color: rgb(121, 72, 16);"  id="inptCadastroUser" placeholder="Nome do usuario" type="text">
+        
+        <input style="border: 1px; color: rgb(121, 72, 16);" id="inptCadastroPassword" placeholder="Senha do usuario" type="text">
+        
+        <input style="border: 1px; color: rgb(121, 72, 16);" id="inptCadastroEmail" placeholder="Email do usuario" type="text">
+        <br><br>
+        
+        <button style="cursor: pointer; border: 0; color: rgb(34, 8, 8); background-color: rgb(108, 148, 63);"  onclick="Cadastrar()">CADASTRAR</button>
+        </center>
+        
+        
+
+
+
+
+</div>
+
+
+
+
+<div id="divLista">
+
+    <center>
+
+
+            <br>
+            <label style="color: rgb(0, 70, 21);" id="lblLista" >NENHUM DADO CADASTRADO!</label>
+
+
+
+        <br><br>
+        <button style="cursor: pointer; border: 0; color: rgb(51, 30, 12); background-color: rgb(108, 148, 63);" onclick="Adicionar()">ADICIONAR</button>
+        <button style="cursor: pointer; border: 0; color: rgb(51, 12, 12); background-color: rgb(108, 148, 63);" onclick="Remover()">REMOVER</button>
+        <button style="cursor: pointer; border: 0; color: rgb(51, 12, 12); background-color: rgb(108, 148, 63);" onclick="Editar()">EDITAR</button><br>
+        <button style="cursor: pointer; border: 0; color: rgb(51, 12, 12); background-color: rgb(108, 148, 63);" onclick="Pesquisar()">PESQUISAR</button>
+        <button style="cursor: pointer; border: 0; color: rgb(51, 12, 12); background-color: rgb(108, 148, 63);" onclick="Listar()">LISTAR</button>
+        </center>
+        
+
+</div>
+
+
+
+<div id="divLogin">
+
+
+
+    <center>
+        <br><br><br>
+        <label style="font-size: xx-large; color: rgb(83, 48, 20);">LOGIN</label>
+        <br>
+        <input style="border: 1px; color: rgb(121, 72, 16);" id="inptLoginUser" placeholder="Nome do usuario" type="password">
+       
+        <input style="border: 1px; color: rgb(121, 72, 16);" id="inptLoginPassword" placeholder="Senha do usuario" type="password">
+        <br><br>
+        
+        <button  style="cursor: pointer; border: 0; color: rgb(51, 12, 12); background-color: rgb(108, 148, 63);"  onclick="Login()">LOGIN</button>
+        </center>
+        
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="CRUD-TRUE.js"></script>
+</body>
+</html>

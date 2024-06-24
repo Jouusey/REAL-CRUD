@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
+
+do{
+
+
+    opcoesMenu = prompt(`======== MENU ========
+   \n 1- Cadastrar nome
+    \n2- Excluir um nome
+    \n3- Editar um nome
+    \n4- Pesquisar se um nome está cadastrado
+    \n5- Listar todos os nomes cadastrados
+    \n 0- Sair do programa */`)
+
+
+    switch(opcoesMenu){
+
+
+        case '1':
+            let nomeDigitado = prompt("Qual nome gostaria de adicionar?(NÃO ADICIONE NOMES REPETIDOS)")
+            vetorNomes.push(nomeDigitado)
+            break
+        case '2':
+            let nomeExcluido = prompt("Qual nome gostaria de remover?")
+            
+            for(i = 0; i < vetorNomes.length;i++){
+
+            if(vetorNomes[i] == nomeExcluido){
+            vetorNomes.splice(i, 1)
+            }
+
+            }
+            break
+            case '3':
+                let nomeEdicao = prompt("Qual nome gostaria de editar?")
+
+                for(i = 0; i < vetorNomes.length;i++){
+    
+                if(vetorNomes[i] == nomeEdicao){
+                    
+                    
+                let nomeEditado = prompt(`Edite ${nomeEdicao} o quanto quiser:`)
+    
+                vetorNomes[i] = nomeEditado}
+                }
+            break 
+            case '4':
+            let nomePesquisa = prompt("Qual nome gostaria de procurar?")
+
+            for(i = 0; i < vetorNomes.length;i++){
+
+            if(vetorNomes[i] == nomePesquisa){
+            
+            
+            alert(` Este é a palavra que procuras: ${vetorNomes} e esta é a sua posição: ${[i]} `)    
+            }}
+            break
+            case '5':
+
+            alert(vetorNomes)
+            break
+            case '0':
+                sairPrograma = true
+                break
+
+            
+            default:
+
+            alert(`INVALIDO!!`)
+
+
+    }
+}while(sairPrograma == false)
+
+ 
+console.table(vetorNomes)
+
+
+ */
